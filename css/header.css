@@ -1,0 +1,33 @@
+/*외부 CSS 문서를 불러옴*/
+@import url("reset.css");
+
+header{
+    width: 100%;
+    min-width: 1300px;
+    background-color: #fff;
+    /*요소에 그림자 주기 x축 이동값, y축 이동값, 블러, 확장(예제엔 생략), 컬러*/
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+header > .container{
+    padding: 0 100px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img{display: block;} /*이미지 여백 제거*/
+
+header .gnb{
+    display: flex;
+    gap: 32px;
+}
+
+header .gnb a{
+    color: #191919;
+    font-size: 15px;
+}
+header .gnb li.on a {
+    color: #10c9c3; /*메인 컬러*/
+}
